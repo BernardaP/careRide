@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="CareRide home page. Company description, links to information and app.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CareRide</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="custom.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="skip">
+    <a href="#main-content">Skip to Main Content</a>
+  </div>
+  <header class="container-nav" role="banner" aria-label="banner">
+    <div class="logo" role="link" aria-label="home">
+      <a href="index.html">
+        <img src="images/logo/careride-logo.png" role="link" alt="company logo" style="width:137px; height:64px"></a>
+    </div>
+    <nav aria-label="Main" >
+      <ul class="topnav" id="mynav" role="list" aria-label="menu items">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">Contact</a></li>
+        <li id="links"><a href="#">App</a></li>
+        <li><a href="#">Sign in</a></li>
+        <li><a href="#">Log in</a></li>
+        <li><a href="javascript:void(0);" aria-label="Main Menu" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a></li>
+      </ul>
+
+    </nav>
+
+  </header>
+  
+  <main id="main-content" >
+    <div class="overlay-dark"></div>
+    <div class="overlay"></div>
+    <div id="background-image1" class="box">
+      <div class="container">
+        <div class="row">
+          <div class="image-block"></div>
+          <div class="content">
+            <p>You have a full day of meetings you can’t miss.</p>
+            <p>Mom has a doctor appointment <br>
+              and physical therapy she can’t miss.</p>
+            <h1>Hello! We are CareRide.</h1>
+            <p>We exist to make sure that mom (and other like her) who <br>
+              needs a little extra help can get where they need to go safely <br>
+              and on time. All while you keep working without missing one <br>
+              single meeting, but still watch her from your phone or <br>
+              computer arrive safely to all her appointments.</p>
+            <a href="#" class="button" role="button">Learn More</a>
+            <div class="arrow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="background-image2" class="box">
+      <div class="container2">
+        <div class="row2">
+          <div class="action-call">
+            <p>Plan your loved one's <br>
+               journey now</p>  
+          </div>
+          <div class="buttons-block">
+            <a href="#" class="button">Download the App</a>
+            <a href="#" class="button">CREATE ACCOUNT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="footer" aria-label="Footer">
+    <div class="social-media-icons"></div>
+    <div class="legal-terms-links"><p>Privacy  Terms</p></div>
+    <div class="copyright"><p>© 2020 Bernarda Pierce</p></div>
+  </footer>  
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("mynav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+
+</html>
